@@ -1,0 +1,14 @@
+---
+layout: post
+title: "EAGER: Using Large Language Models to Model Threats to Sensitive Information"
+categories: research
+# author: "Andrew Tang, Aria Vikram, Columbia History Lab, Vishal Misra"
+image: images/mosaic.jpg
+authors: "<strong>Andrew Tang</strong>, Aria Vikram, Columbia History Lab, Vishal Misra"
+venue: "NSF Award 2331492"
+# arxiv: https://arxiv.org/abs/2308.14737
+# code: https://github.com/leonidk/fmb-plus
+# website: https://leonidk.github.io/fmb-plus
+---
+
+We address the mosaic risk of releasing top-secret documents via multi-hop reasoning and retrieval-augmented generation.
