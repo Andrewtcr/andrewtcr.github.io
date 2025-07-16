@@ -1,0 +1,16 @@
+---
+layout: post
+title: "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
+categories: pub
+video: media/minedojo.mp4
+authors: '<a href="https://jimfan.me/" target="_blank">Linxi "Jim" Fan</a>, <a href="https://guanzhi.me" target="_blank">Guanzhi Wang*</a>, <a href="https://yunfanj.com/" target="_blank">Yunfan Jiang*</a>, <a href="https://ai.stanford.edu/~amandlek/" target="_blank">Ajay Mandlekar</a>, <a href="https://yyuncong.github.io/" target="_blank">Yuncong Yang</a>, <a href="https://www.haoyizhu.site/" target="_blank">Haoyi Zhu</a>, Andrew Tang, <a href="https://ai.stanford.edu/~dahuang/" target="_blank">De-An Huang</a>, <a href="https://www.cs.utexas.edu/~yukez/" target="_blank">Yuke Zhu<sup>†</sup></a>, <a href="http://tensorlab.cms.caltech.edu/users/anima/" target="_blank">Anima Anandkumar<sup>†</sup></a>'
+date: 2022-12-06
+venue: "NeurIPS Datasets and Benchmarks Track"
+award: "Outstanding Paper Award"
+arxiv: https://arxiv.org/abs/2206.08853
+code: https://github.com/MineDojo/MineDojo
+website: https://minedojo.org
+---
+
+We introduced an open-ended benchmark suite for embodied agent research, built on Minecraft and backed by a web-scale knowledge base.<br>
+<em>My role</em>: built multimodal data pipeline for Minecraft Wiki and Reddit. I am highly grateful for this early project that inspired me to pursue agentic AI research.
