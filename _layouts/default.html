@@ -93,8 +93,13 @@
               <br>
               {{post.authors}}
               <br>
-              <em>{{post.venue}}</em>, {% if post.status == "wip" %}WIP, Updated {{ post.date | date: "%B %Y" }}{% endif
-              %}{% if post.award %} &nbsp;<span style="color: red;">({{post.award}})</span>{% endif %}
+              {% if post.venue %}
+              <em>{{post.venue}}</em>,
+              {% endif %}
+
+              {% if post.status == "wip" %}WIP, Updated {{ post.date | date: "%B %Y" }}{% endif %}
+
+              {% if post.award %} &nbsp;<span style="color: red;">({{post.award}})</span>{% endif %}
               <br>
               {% if post.arxiv %}
               <a href="{{post.arxiv}}" target="_blank">[arxiv]</a>
