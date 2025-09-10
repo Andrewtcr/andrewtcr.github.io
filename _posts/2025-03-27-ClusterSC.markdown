@@ -7,6 +7,7 @@ authors: '<a href="https://saeyoungrho.com/">Saeyoung Rho</a>, Andrew Tang, <a h
 date: 2025-03-27
 venue: "AISTATS"
 arxiv: https://arxiv.org/abs/2503.21629
+code: https://github.com/srho1/ClusterSC
 ---
 
 We propose ClusterSC to mitigate noise and the curse of dimensionality in disaggregate-level synthetic control by uncovering latent donor subgroups. Results: theoretical guarantees and significant MSE improvement on synthetic and real-world datasets.
