@@ -12,4 +12,4 @@ status: wip
 # website: https://leonidk.github.io/fmb-plus
 ---
 
-We are building evaluation pipelines that chain open and declassified documents to estimate when sensitive facts can be inferred (“mosaic risk”). Early benchmarks and red‑team query suites are underway.
+We are building evaluation pipelines that chain open and declassified documents to estimate when sensitive facts can be inferred (“mosaic risk”). Our goal is to measure the capabilities and limits of RAG pipelines for mosaic risk prediction.
