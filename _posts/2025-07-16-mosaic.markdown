@@ -4,7 +4,7 @@ title: "Mosaic-Risk Modeling with Multi-Hop RAG"
 categories: current
 # author: "Andrew Tang, Aria Vikram, Columbia History Lab, Vishal Misra"
 image: media/mosaic.jpg
-authors: 'Andrew Tang, <a href="https://www.linkedin.com/in/aria-vikram/">Aria Vikram</a>, <a href="https://lab.history.columbia.edu/">Columbia History Lab</a>, <a href="http://www.cs.columbia.edu/~misra/">Vishal Misra</a>'
+authors: '<strong>Andrew Tang</strong>, <a href="https://www.linkedin.com/in/aria-vikram/">Aria Vikram</a>, <a href="https://lab.history.columbia.edu/">Columbia History Lab</a>, <a href="http://www.cs.columbia.edu/~misra/">Vishal Misra</a>'
 venue: "NSF EAGER"
 status: wip
 # arxiv: https://arxiv.org/abs/2308.14737

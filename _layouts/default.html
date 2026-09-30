@@ -41,11 +41,12 @@
               Hi! I'm a Computer Science PhD student at Columbia University, advised by <a
                 href="http://www.cs.columbia.edu/~misra/"> Vishal Misra</a> and <a
                 href="http://www.cs.columbia.edu/~danr/">Dan Rubenstein</a>.
-              I study retrieval-augmented LLMs—how models use retrieved evidence to reason and act under real-world
-              constraints, and the retrieval systems that enable them.
+              I study how LLMs and agents use retrieved information, and where retrieval falls short: when the
+              evidence that looks most relevant isn't the most useful, fair, or safe to surface. My work builds
+              evaluations and methods for retrieval-augmented systems.
               <br><br>
-              Research interests: agentic LLMs, long-horizon
-              planning, external tool use, and interpretability.
+              Research interests: retrieval-augmented and agentic LLMs, evaluation, agent memory, and trustworthy
+              retrieval (bias, privacy, information leakage).
 
               <p style="text-align:center">
                 <a target="_blank" href="mailto:andrew.t@columbia.edu"> Email</a> &nbsp;/&nbsp;
@@ -61,6 +62,73 @@
             </td>
           </tr>
         </table>
+
+        <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Publications</h2>
+            </td>
+          </tr>
+        </table>
+        <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'pub' %}
+          <tr>
+            <td style="padding:2.5%;width:30%;vertical-align:middle;min-width:150px;text-align:center">
+              {% if post.video %}
+              <video autoplay loop muted style="width:auto; height:auto; max-width:100%; max-height:150px;">
+                <source src="/{{post.video}}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              {% elsif post.image %}
+              <img src="/{{post.image}}" alt="project image"
+                style="width:auto; height:auto; max-width:100%; max-height:150px;" />
+              {% endif %}
+            </td>
+            <td style="padding:2.5%;width:70%;vertical-align:middle">
+              <papertitle>{{post.title}}</papertitle>
+              <br>
+              {{post.authors}}
+              <br>
+              <em>{{post.venue}}</em>, {% if post.status == "wip" %}{{post.status_content}}, Updated {{ post.date |
+              date: "%B %Y" }}{% else %}{{ post.date | date: "%Y" }}{% endif %}{% if post.award %} &nbsp;<span
+                style="color: red;">({{post.award}})</span>{% endif %}
+              <br>
+              {% if post.arxiv %}
+              <a href="{{post.arxiv}}" target="_blank">[arxiv]</a>
+              {% endif %}
+              {% if post.website %}
+              <a href="{{post.website}}" target="_blank">[website]</a>
+              {% endif %}
+              {% if post.code %}
+              <a href="{{post.code}}" target="_blank">[code]</a>
+              {% endif %}
+              {% if post.poster %}
+              <a href="{{post.poster}}" target="_blank">[poster]</a>
+              {% endif %}
+              {% if post.slides %}
+              <a href="{{post.slides}}" target="_blank">[slides]</a>
+              {% endif %}
+              {% if post.youtube %}
+              <a href="{{post.youtube}}" target="_blank">[youtube]</a>
+              {% endif %}
+              <br>
+              <p>
+                {{ post.excerpt }}
+              </p>
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        <br>
+        <br>
+        <br>
 
         <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -136,77 +204,10 @@
         <table
           style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Publications</h2>
-            </td>
-          </tr>
-        </table>
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-
-          {% for post in site.posts %}
-          {% for cat in post.categories %}
-          {% if cat == 'pub' %}
-          <tr>
-            <td style="padding:2.5%;width:30%;vertical-align:middle;min-width:150px;text-align:center">
-              {% if post.video %}
-              <video autoplay loop muted style="width:auto; height:auto; max-width:100%; max-height:150px;">
-                <source src="/{{post.video}}" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              {% elsif post.image %}
-              <img src="/{{post.image}}" alt="project image"
-                style="width:auto; height:auto; max-width:100%; max-height:150px;" />
-              {% endif %}
-            </td>
-            <td style="padding:2.5%;width:70%;vertical-align:middle">
-              <papertitle>{{post.title}}</papertitle>
-              <br>
-              {{post.authors}}
-              <br>
-              <em>{{post.venue}}</em>, {% if post.status == "wip" %}{{post.status_content}}, Updated {{ post.date |
-              date: "%B %Y" }}{% else %}{{ post.date | date: "%Y" }}{% endif %}{% if post.award %} &nbsp;<span
-                style="color: red;">({{post.award}})</span>{% endif %}
-              <br>
-              {% if post.arxiv %}
-              <a href="{{post.arxiv}}" target="_blank">[arxiv]</a>
-              {% endif %}
-              {% if post.website %}
-              <a href="{{post.website}}" target="_blank">[website]</a>
-              {% endif %}
-              {% if post.code %}
-              <a href="{{post.code}}" target="_blank">[code]</a>
-              {% endif %}
-              {% if post.poster %}
-              <a href="{{post.poster}}" target="_blank">[poster]</a>
-              {% endif %}
-              {% if post.slides %}
-              <a href="{{post.slides}}" target="_blank">[slides]</a>
-              {% endif %}
-              {% if post.youtube %}
-              <a href="{{post.youtube}}" target="_blank">[youtube]</a>
-              {% endif %}
-              <br>
-              <p>
-                {{ post.excerpt }}
-              </p>
-            </td>
-          </tr>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-        <br>
-
-        <table
-          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:center;font-size:small;">
-                Last updated July 2025. Design and source code from <a style="font-size:small;"
+                Last updated September 2026. Design and source code from <a style="font-size:small;"
                   href="https://jonbarron.info">Jon Barron's website</a>
               </p>
             </td>

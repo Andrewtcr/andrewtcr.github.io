@@ -3,7 +3,7 @@ layout: post
 title: "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
 categories: pub
 video: media/minedojo.mp4
-authors: '<a href="https://jimfan.me/" target="_blank">Linxi "Jim" Fan</a>, <a href="https://guanzhi.me" target="_blank">Guanzhi Wang*</a>, <a href="https://yunfanj.com/" target="_blank">Yunfan Jiang*</a>, <a href="https://ai.stanford.edu/~amandlek/" target="_blank">Ajay Mandlekar</a>, <a href="https://yyuncong.github.io/" target="_blank">Yuncong Yang</a>, <a href="https://www.haoyizhu.site/" target="_blank">Haoyi Zhu</a>, Andrew Tang, <a href="https://ai.stanford.edu/~dahuang/" target="_blank">De-An Huang</a>, <a href="https://www.cs.utexas.edu/~yukez/" target="_blank">Yuke Zhu<sup>†</sup></a>, <a href="http://tensorlab.cms.caltech.edu/users/anima/" target="_blank">Anima Anandkumar<sup>†</sup></a>'
+authors: '<a href="https://jimfan.me/" target="_blank">Linxi "Jim" Fan</a>, <a href="https://guanzhi.me" target="_blank">Guanzhi Wang*</a>, <a href="https://yunfanj.com/" target="_blank">Yunfan Jiang*</a>, <a href="https://ai.stanford.edu/~amandlek/" target="_blank">Ajay Mandlekar</a>, <a href="https://yyuncong.github.io/" target="_blank">Yuncong Yang</a>, <a href="https://www.haoyizhu.site/" target="_blank">Haoyi Zhu</a>, <strong>Andrew Tang</strong>, <a href="https://ai.stanford.edu/~dahuang/" target="_blank">De-An Huang</a>, <a href="https://www.cs.utexas.edu/~yukez/" target="_blank">Yuke Zhu<sup>†</sup></a>, <a href="http://tensorlab.cms.caltech.edu/users/anima/" target="_blank">Anima Anandkumar<sup>†</sup></a>'
 date: 2022-12-06
 venue: "NeurIPS Datasets and Benchmarks Track"
 award: "Outstanding Paper Award"
