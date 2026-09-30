@@ -4,7 +4,7 @@ title: "MIDLLMAT: Mosaic Inference Defender Against LLM-Assisted Threats"
 categories: current
 # author: "Andrew Tang, Aria Vikram, Columbia History Lab, Vishal Misra"
 image: media/mosaic.jpg
-authors: '<strong>Andrew Tang</strong>, <a href="https://lab.history.columbia.edu/">Matthew Connelly</a>, Siddhartha Dalal, <a href="http://www.cs.columbia.edu/~misra/">Vishal Misra</a>'
+authors: '<strong>Andrew Tang</strong>, <a href="https://lab.history.columbia.edu/directory/matthew-j-connelly">Matthew Connelly</a>, <a href="https://sps.columbia.edu/person/siddhartha-dalal-phd">Siddhartha Dalal</a>, <a href="http://www.cs.columbia.edu/~misra/">Vishal Misra</a>'
 venue: "IARPA BENGAL & NSF EAGER"
 status: wip
 date: 2026-09-30
